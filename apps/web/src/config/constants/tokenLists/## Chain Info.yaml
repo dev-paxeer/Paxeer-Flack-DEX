@@ -1,0 +1,113 @@
+## Chain Info
+Chain ID: 80000
+Network Name: Paxeer Network
+Native Coin: PAXEER (PAX)
+RPC URL: https://v1-rpc.paxeer.app
+Explorer: https://paxscan.paxeer.app
+
+## Token List
+USDC:  0x29e1f94f6b209b57ecdc1fe87448a6d085a78a5a
+WPAX:  0x17D6592A6B27564F3D0810D79405D366a4aC69e5 (Wrapped PAX our WETH9)
+USDT:  0x2a401fe7616c4aba69b147b4b725ce48ca7ec660
+SOL:   0x7100cf39ff0e845d7751fb56198b8dd16c6ecb2a
+UNI:   0x90a271d104aea929b68867b3050efacbc1a28e84
+WBTC:  0x96465d06640aff1a00888d4b9217c9eae708c419
+TON:   0x9d60b394276e67a44f2d80e1ab7cfafa4e151f02
+CRO:   0xa1956408cbeb4c0d2c257be394b9bdf4c9e1a061
+BNB:   0xbbf11b964ac48bd11109b68dffe129b45671e34e
+WETH:  0xd0c1a714c46c364dbdd4e0f7b0b6ba5354460da7
+DOT:   0xdccec2b62dd102276b7ba689405a5cd7504a8cd3
+wstETH: 0xeb2c4ae6fe90f9bf25c94269236cb5408e00e188
+
+## DEPLOYED CONTRACTS
+FlackToken:  0xD49A33bCaeD060e0d0aA627Eed620A26ECF6175E
+XFlackToken:  0xe531f6b32f58e4143117B2796aBe42B85082DDE3
+FlackMaster:  0xe9D61BF7075eca4caa290ea921a5f99b46EFEBa7
+NFTPoolFactory:  0xD5123465fE181514f23670E07aBdb7952A398451
+YieldBooster:  0x5B96Ee86f61D119A1Cf7d4C5FbaA36466ff53D15
+Dividends:  0x23707CE4EA36c14327509Ed4F5C9bec3df353981
+Launchpad:  0xe0187Be902A4B2c8461b2CC89b8B45A13116a601
+hyperPoolFactory:  0x595304Cf99A44673fe68df2F82f3e44271422B82
+FairAuction address:  0x2086017647798F6AC183bC05D41e05A2f7c85AEc
+Factory: 0x8C63e50A2CdF7AA32E72CC66F647695c193970BC
+Router: 0x292600064a778BCCb10f7E9d5190138B195c8C7F
+PositionHelper: 0x222d04Bc89662f429831389d6080862d3EB13637
+V3PoolDeployer: 0xFE7167945DF72CA2924179Cf20c71543BB614159
+V3Factory: 0x4e0c3bF455D03DCAeA3E86B52D9f7849FB1100e8
+StableSwapLPFactory: 0xbb4e55478f9d2845B4576F015277d1556B4a4424
+StableSwapTwoPoolDeployerDeployer: 0xA26Bd303148975f1d97ACB1E3dE400571C31DcD3
+StableSwapThreePoolDeployerDeployer: 0x99283d1b320Bac8DC592C31b1d406f7Daa0E916e
+StableSwapFactoryDeployer: 0x72aB8aA55fc1534BdAF8E748eA8dD6419C361ef1
+StableSwapTwoPoolInfoDeployer: 0x4A1b37877bF60bfF2456b7CD4848b5061A38F62D
+SwapRouter: 0x4d86f0291eFC5846117dF3120e2c2b3353b34847
+NonfungibleTokenPositionDescriptor: 0x05Deb4a7626bE17a8B4DC431735f559CA09BaC55
+NonfungiblePositionManager: 0x3208fA59a5cfbf59B4c8768ecf955B2C91EC2651
+InterfaceMulticall: 0xB336bf3b6f53BFe74b216635d2b25091B417F51F
+InterfaceMulticallV2: 0x027d410C1d86dff4d877D40bfA12843d6B61d098
+V3Migrator: 0xc1E9bcDbA1D465608aC4b775cbb8728E8B70f6A3
+TickLens: 0xf17A498BA42a690824AbC583bB48a1F6d84AD5c0
+QuoterV2: 0x2ce307bdaF806259719410441c566fa10c9bBe2c
+SmartRouterHelper: 0xbF518e8A70351141A731B80502D746Fd0CbabE11
+SmartRouter: 0xCEDaDE9af95332B3A66D80A0c1680e37Dd140e5E
+MixedRouteQuoterV1: 0x46D9cb93857763BE6813E45af3e868ffa95169C4
+QuoterV2: 0x27167eD977c54c1f0FfeDD794973232186774A69
+TokenValidator: 0x86B56fe8d02209b9931cbBa48F25d0bf738EC9C1
+
+## Deployed Subgraphs
+V3 Exchange Subgraph
+Endpoint: https://v1-api.paxeer.app/subgraphs/name/flack/exchange-v3-paxeer
+Status: ✅ Healthy and fully synced
+V2 Positions Subgraph
+Endpoint: https://v1-api.paxeer.app/subgraphs/name/flack/exchange-v2-positions-paxeer
+Status: ✅ Healthy and fully synced
+StableSwap Subgraph
+Endpoint: https://v1-api.paxeer.app/subgraphs/name/flack/exchange-stableswap-paxeer
+
+
+## Extra Paxeer Price API 
+## ENDPOINT: https://dex-api.paxeer.app/api/prices
+
+```GET /api/prices```
+
+## Response
+
+``` json
+{
+  "cached": true,
+  "data": {
+    "0x29e1f94f6b209b57ecdc1fe87448a6d085a78a5a": {
+      "address": "0x29e1f94f6b209b57ecdc1fe87448a6d085a78a5a",
+      "adjustedPrice": "999804000000",
+      "change24h": -0.00142819055682888,
+      "decimals": 6,
+      "lastUpdated": 1757147328,
+      "name": "USD Coin",
+      "price": 0.999804,
+      "symbol": "USDC",
+      "timestamp": 1757147328068
+    }
+  },
+  "success": true
+}
+
+
+##  ENDPOINT: https://dex-api.paxeer.app/api/prices/{Token_Address_Hash}
+
+```GET /api/prices/{Token_Address_Hash}```
+
+## Response
+
+{
+  "data": {
+    "address": "0x29e1f94f6b209b57ecdc1fe87448a6d085a78a5a",
+    "symbol": "USDC",
+    "name": "USD Coin",
+    "decimals": 6,
+    "price": 0.999804,
+    "adjustedPrice": "999804000000",
+    "change24h": -0.00141392036401706,
+    "lastUpdated": 1757147448,
+    "timestamp": 1757147448060
+  },
+  "success": true
+}
