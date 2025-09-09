@@ -11,6 +11,7 @@ import { farmsV3 as arbitrumFarm } from '@pancakeswap/farms/constants/arb'
 import { farmsV3 as baseFarm } from '@pancakeswap/farms/constants/base'
 import { farmsV3 as opBnbTestnetFarms } from '@pancakeswap/farms/constants/opBnbTestnet'
 import { tradingRewardV3Pair as tradingRewardV3Pair56 } from './56'
+import { tradingRewardV3Pair as tradingRewardV3Pair80000 } from './80000'
 
 export const tradingRewardPairConfigChainMap: Record<FarmV3SupportedChainId, ComputedFarmConfigV3[]> = {
   [ChainId.ETHEREUM]: ethFarm,
@@ -27,4 +28,5 @@ export const tradingRewardPairConfigChainMap: Record<FarmV3SupportedChainId, Com
   [ChainId.OPBNB_TESTNET]: opBnbTestnetFarms,
 
   [ChainId.BLAST_TESTNET]: [],
+  [ChainId.PAXEER]: tradingRewardV3Pair80000,
 }
