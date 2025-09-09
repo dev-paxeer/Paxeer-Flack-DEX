@@ -10,6 +10,7 @@ const PANCAKE_ARB_DEFAULT = 'https://tokens.yantra.exchange/pancakeswap-arbitrum
 const PANCAKE_LINEA_DEFAULT = 'https://tokens.yantra.exchange/pancakeswap-linea-default.json'
 const PANCAKE_BASE_DEFAULT = 'https://tokens.yantra.exchange/pancakeswap-base-default.json'
 const PANCAKE_OPBNB_DEFAULT = 'https://tokens.yantra.exchange/pancakeswap-opbnb-default.json'
+const PANCAKE_PAXEER_DEFAULT = 'https://tokens.yantra.exchange/pancakeswap-paxeer-default.json'
 
 export const PANCAKE_ETH_MM = 'https://tokens.yantra.exchange/pancakeswap-eth-mm.json'
 export const PANCAKE_BSC_MM = 'https://tokens.yantra.exchange/pancakeswap-bnb-mm.json'
@@ -27,6 +28,7 @@ const OP_SUPER_CHAIN_URL =
   'https://raw.githubusercontent.com/ethereum-optimism/ethereum-optimism.github.io/master/optimism.tokenlist.json'
 const BASE_URLS = [PANCAKE_BASE_DEFAULT, OP_SUPER_CHAIN_URL, 'https://tokens.coingecko.com/base/all.json']
 const OPBNB_URLS = [PANCAKE_OPBNB_DEFAULT]
+const PAXEER_URLS = [PANCAKE_PAXEER_DEFAULT, 'https://tokens.coingecko.com/paxeer/all.json']
 
 const SCROLL_URLS = ['https://tokens.coingecko.com/scroll/all.json']
 
@@ -49,6 +51,7 @@ export const DEFAULT_LIST_OF_LISTS: string[] = [
   ...UNSUPPORTED_LIST_URLS, // need to load unsupported tokens as well
   ...WARNING_LIST_URLS,
   ...OPBNB_URLS,
+  ...PAXEER_URLS,
 ]
 
 // default lists to be 'active' aka searched across
@@ -64,6 +67,7 @@ export const DEFAULT_ACTIVE_LIST_URLS: string[] = [
   PANCAKE_LINEA_DEFAULT,
   PANCAKE_BASE_DEFAULT,
   PANCAKE_OPBNB_DEFAULT,
+  PANCAKE_PAXEER_DEFAULT,
   OP_SUPER_CHAIN_URL,
 ]
 
@@ -76,4 +80,5 @@ export const MULTI_CHAIN_LIST_URLS: { [chainId: number]: string[] } = {
   [ChainId.LINEA]: LINEA_URLS,
   [ChainId.BASE]: BASE_URLS,
   [ChainId.OPBNB]: OPBNB_URLS,
+  [ChainId.PAXEER]: PAXEER_URLS,
 }
