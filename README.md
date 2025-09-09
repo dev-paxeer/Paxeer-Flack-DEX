@@ -1,8 +1,6 @@
-# Yantra Frontend
+# FLACK Frontend
 
-<p align="center">
-  <a href="https://yantra.exchange">
-      <img src="https://yantra-assets.netlify.app/images/symbol/yantra.png" height="128">
+
   </a>
 </p>
 
