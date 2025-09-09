@@ -78,4 +78,5 @@ export const DEFAULT_COMMON_PRICE: Record<FarmV3SupportedChainId, CommonPrice> =
   [ChainId.OPBNB_TESTNET]: {},
 
   [ChainId.BLAST_TESTNET]: {},
+  [ChainId.PAXEER]: {},
 }
