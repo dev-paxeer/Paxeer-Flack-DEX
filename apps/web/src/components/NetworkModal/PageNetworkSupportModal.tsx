@@ -55,7 +55,7 @@ export function PageNetworkSupportModal() {
   return (
     <Modal title={title || t('Check your network')} hideCloseButton headerBackground="gradientCardHeader">
       <Grid style={{ gap: '16px' }} maxWidth="360px">
-        <Text bold>{t('It’s a Blast only feature')}</Text>
+        <Text bold>{t('Feature available on Paxeer Network')}</Text>
 
         {image && (
           <Box mx="auto" my="8px" position="relative" width="100%" minHeight="250px">
@@ -64,7 +64,7 @@ export function PageNetworkSupportModal() {
         )}
         <Text small>
           {t(
-            'Yantra features are currently available only on Blast Chain! Come over and join the community in the fun!',
+            'Yantra features are fully available on Paxeer Network! Switch to Paxeer to access all features.',
           )}
         </Text>
         {canSwitch ? (
@@ -72,10 +72,10 @@ export function PageNetworkSupportModal() {
             variant={foundChain && lastValidPath ? 'secondary' : 'primary'}
             isLoading={isLoading}
             onClick={() =>
-              isWrongNetwork ? switchNetworkLocal(ChainId.BLAST_TESTNET) : switchNetworkAsync(ChainId.BLAST_TESTNET)
+              isWrongNetwork ? switchNetworkLocal(ChainId.PAXEER) : switchNetworkAsync(ChainId.PAXEER)
             }
           >
-            {t('Switch to %chain%', { chain: 'Blast' })}
+            {t('Switch to %chain%', { chain: 'Paxeer' })}
           </Button>
         ) : (
           <Message variant="danger">

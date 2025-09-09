@@ -29,4 +29,5 @@ export const farmsV3ConfigChainMap: Record<FarmV3SupportedChainId, ComputedFarmC
   [ChainId.OPBNB_TESTNET]: opBnbTestnetFarms,
 
   [ChainId.BLAST_TESTNET]: [],
+  [ChainId.PAXEER]: [],
 }
