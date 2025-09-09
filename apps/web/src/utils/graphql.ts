@@ -50,6 +50,7 @@ export const v3Clients = {
   [ChainId.OPBNB]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.OPBNB]),
 
   [ChainId.BLAST_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BLAST_TESTNET]),
+  [ChainId.PAXEER]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.PAXEER]),
 }
 
 export const v3InfoClients = { ...v3Clients, [ChainId.BSC]: new GraphQLClient(V3_BSC_INFO_CLIENT) }
